@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "description" content = "Prepcourse exercise">
+		<meta name = "author" content = "Esther Mun">
+		<link rel = "stylesheet" type = "text/css" href = "css/styles.css">
+		<!--<script src = "js/functions.js" type = "text/javascript"> </script> 
+		scripts can be loaded at the end of body tag. it saves loading time of 1-2secounds-->
+		<title> Calculator exercise </title>
+	</head>	
+
+	<body>
+		<section class = "receipt">
+			<h3>Tip & Total bill Calculator </h3>
+			<div class = "line-item">
+				<div class = "text inline"> 
+					Total:	
+				</div>
+				<div class = "amt inline">
+					<input id = "total" type = "number">
+				</div>
+			</div>
+
+			<div class = "line-item">
+				<div class = "text inline">
+					Tax (13%):
+				</div>
+				<div class = "amt inline">
+					<input id = "tax" type = "number" readonly>
+				</div>
+			</div>
+
+			<div class = "line-item">
+				<div class = "text inline">
+					Tip Persontage:
+				</div>
+
+				<div class = "amt inline">				
+					<div class = "percent-sign"> % </div>
+					<input id = "tip_percent" type = "text" class = "symbol-buffer">
+				</div>
+			</div>
+
+			<div class = "line-item">
+				<div class = "text inline">
+					Tip Amount:
+				</div>
+				<div class = "amt inline">
+					<input id = "tip_amt" type = "number" readonly>
+				</div>
+			</div>
+
+			<div class = "line-item">
+				<div class = "text inline">
+					Split the bill between:
+				</div>
+
+				<div class = "amt inline">	
+					<div class = "persons"> persons </div>			
+					<input id = "split_bill" type = "number">
+				</div>
+			</div>
+
+			<button id = "calculate"> Calculate </button>
+			<div class = "border-break"></div>
+
+			<div class = "line-item">
+				<div class = "text inline">
+					Each pays:
+				</div>
+				<div class = "amt inline">
+					<input id = "pay_amt" type = "text" readonly>
+				</div>
+			</div>
+		</section>
+
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src = "js/functions.js" type = "text/javascript"> </script>
+	</body>
+</html>

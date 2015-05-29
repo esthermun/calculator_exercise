@@ -1,0 +1,99 @@
+html, body {
+	margin:0;
+	height: 100%;
+}
+body,h3 {
+	font-family: helvaetica;
+	font-size: 100%;
+}
+h3 {
+	text-align: center;
+}
+button {
+	position: relative;
+	display: inline-block;
+	padding: 6px 12px;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 20px;
+	color: #333;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #eee;
+	background-image: -webkit-linear-gradient(#fcfcfc, #eee);
+	background-image: linear-gradient(#fcfcfc, #eee);
+	background-repeat: repeat-x;
+	border: 1px solid #d5d5d5;
+	border-radius: 3px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select:none;
+	-webkit-appearance: none;
+	margin-bottom: 40px;
+}
+.inline {
+	display: inline-block;
+	vertical-align: top;
+}
+.receipt {
+	width: 350px;
+	padding: 40px;
+	margin: 100px auto;
+	color: #555;
+	background: whitesmoke;
+	-webkit-box-shadow: 0 0 10px #d8d8d8;
+	box-shadow: 0 0 10px #d8d8d8;
+}
+.receipt .line-item {
+	margin: 40px 0px;
+}
+.receipt .line-item .txt {
+	font-size: 14pt;
+	font-weight: 100;
+	float: left;
+}
+.receipt .line-item .amt {
+	font-size: 14pt;
+	font-weight: 100;
+	float: right;
+	position: relative;
+}
+.receipt input {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #acaeb0;
+	padding: 5px;
+	background: white;
+	text-align: center;
+	outline: none;
+}
+.receipt .percent-sign {
+	position: absolute;
+	font-variant: 12pt;
+	color: #acaeb0;
+	top: 5px;
+	right: 2px;
+}
+.receipt .symbol-buffer {
+	padding-right: 30px;
+	margin-right: -10px;
+	width: 137px;
+	-webkit-box-sizing: border-box; /*safari/chrome*/
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.receipt .border-break {
+	border-top: 1px dashed #acaeb0;
+}
+.receipt .persons {
+	position: absolute;
+	font-variant: 12pt;
+	color: #acaeb0;
+	top: 5px;
+	right: 2px;
+}
+.error_button {
+	color: #fff;
+	background: #ff0000;
+}
